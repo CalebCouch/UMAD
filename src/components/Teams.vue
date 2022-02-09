@@ -9,21 +9,21 @@
           <p class="H3">UMAD X</p>
           <p class="H4">Practice time: 8:30-9:30 PM EST Daily</p>
           <p class="H4">Captian: SoupLaddler</p>
-          <img class="Rimage" src="../assets/logo.png">
+          <img class="Rimage" src="https://ibb.co/qMGPFDW">
           <div class="Register H4">Apply</div>
         </div>
         <div class="Team">
           <p class="H3">UMAD Y</p>
           <p class="H4">Practice time: 8:00-9:00 PM EST Daily</p>
           <p class="H4">Captian: Ghost Maker</p>
-          <img class="Rimage" src="../assets/logo.png">
+          <img class="Rimage" src="https://ibb.co/qMGPFDW">
           <div class="Register H4">Apply</div>
         </div>
         <div class="Team">
           <p class="H3">UMAD Z</p>
           <p class="H4">Practice time: 7:30-8:30 PM EST Daily</p>
           <p class="H4">Captian: Cerberus</p>
-          <img class="Rimage" src="../assets/logo.png">
+          <img class="Rimage" src="https://ibb.co/qMGPFDW">
           <div class="Register H4">Apply</div>
         </div>
       </div>
