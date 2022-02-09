@@ -49,18 +49,14 @@ export default {
   mounted () {
     var video = document.getElementById('video1')
     video.play()
-    setTimeout(() => {
-      while (true) {
-        if (!video.isPlaying) {
-          console.log(video.currentTime)
-          video.currentTime = 4.589274;
-          video.pause()
-          console.log("heello")
-          break
-        }
+    var FinishVideo = () => {
+      if (video.currentTime >= 4.627744) {
+        video.pause()
+        return
       }
-    }, 5000)
-    
+      setTimeout(() => {FinishVideo()}, 100)
+    }
+    FinishVideo()
   },
   methods: {
     scrollTo: (id) => {
