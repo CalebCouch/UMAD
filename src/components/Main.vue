@@ -45,7 +45,7 @@ export default {
   },
   mounted () {
     var video = document.getElementById('video1')
-    video.play()
+    setTimeout(()=>{video.play()},1000)
     var FinishVideo = () => {
       if (video.currentTime >= 4.627744) {
         video.pause()
@@ -91,6 +91,7 @@ export default {
 <style scoped>
 #video1 {
   width: 100vw;
+  height: 90vh;
 }
 @media only screen and (max-width: 1007px) {
   .Header, .Content, .MC {
