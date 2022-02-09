@@ -64,7 +64,7 @@ export default {
     width: 100%;
     heigth: 5%;
     margin: auto;
-    padding-top: 5%;
+    padding-top: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
@@ -87,7 +87,8 @@ export default {
     margin-left: 2.5%;
     margin-right: 2.5%;
     padding-top: 2.5%;
-    height: 50vh;
+    padding-bottom: 5%;
+    height: 75vh;
   }
 
   .Register{
@@ -99,7 +100,7 @@ export default {
     text-align: center;
     color: white;
     display: flex;
-    background-color: #00B1FF;
+    background-color: black;
     justify-content: center;
     align-content: center;
     flex-direction: column;
@@ -107,7 +108,8 @@ export default {
   }
 
   .Rimage {
-    width: 75%;
+    height: 50%;
+    width: 50%;
   }
   
 

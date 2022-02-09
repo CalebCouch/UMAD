@@ -13,7 +13,11 @@
       <div class="Content-One">
        <!--  <p class="H1 B" style="color: #001B27; padding-bottom: 1%;">Computer Science Mentorship for Calvinist Homeschoolers</p>
         <p class="H35" style="width: 100%;">A proven curriculum to teach your children programming and mathematics taught by a retired software CEO.</p> -->
-        <div class="Content-One-Nav-Button H5" v-on:click="scrollTo('Register-Left')"><div class="buttonC">Apply Now</div></div>
+<!--         <div class="Content-One-Nav-Button H5" v-on:click="scrollTo('Register-Left')"><div class="buttonC">Apply Now</div></div>
+ -->        <video id="video1"
+    muted="muted">
+            <source src="../assets/UMADCLAN_Ninja_Intro.mp4"/>
+        </video>
       </div>
       
     </div>
@@ -41,6 +45,22 @@ export default {
   data () {
     return {
     }
+  },
+  mounted () {
+    var video = document.getElementById('video1')
+    video.play()
+    setTimeout(() => {
+      while (true) {
+        if (!video.isPlaying) {
+          console.log(video.currentTime)
+          video.currentTime = 4.589274;
+          video.pause()
+          console.log("heello")
+          break
+        }
+      }
+    }, 5000)
+    
   },
   methods: {
     scrollTo: (id) => {
@@ -76,6 +96,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#video1 {
+  width: 100vw;
+}
 @media only screen and (max-width: 1007px) {
   .Header, .Content, .MC {
     display: none!important;
@@ -85,52 +108,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1007px) {
-  .Content-One-Nav-Button {
-    width: 80%;
-  }
-  .nav-buttons {
-    width: 50%!important;
-  }
-}
-
-
 @media only screen and (max-width: 651px) {
-  .Header {
-    height: 10%!important;
-    position: fixed!important;
-    top: 0!important;
-    z-index: 10!important;
-  }
-  .Content {
-    margin-top: 20%!important;
-  }
-  .Content-Two {
-    display: none!important;
-  }
-  .Register-button {
-    width: 27vw!important;
-    height: 60%!important;
-  }
-  .nav-button {
-    display: none!important;
-  }
-  .nav-buttons {
-    width: 37vw!important;
-  }
-  .Content {
-    margin-bottom: 50%;
-    box-shadow: 0 0 0 0!important;
-  }
-  .Content-One-Nav-Button {
-    width: 95%!important;
-    height: 7.5vh!important;
-  }
-  .buttonC {
-    font-size: 5vw!important;
-    line-height: 6vw!important;
-    margin: 0px!important;
-  }
 }
 
 .white-space {
@@ -146,20 +124,16 @@ export default {
 .Content {
   display: flex;
   flex-direction: row;
-  box-shadow: 0 1vw 2vw 0.6vw lightgrey;
 }
 
 .Content-One {
-  padding-left: 5%;
-  margin-top: 5%;
   width: 100%;
-  height: 90vh;
-  padding-bottom: 10%;
 }
 
 .Content-One-Nav-Button {
   position: absolute;
-  bottom: 20%;
+  bottom: 20vh;
+  left: 5vw;
   height: 5vh;
   border-radius: 100px;
   width: 50%;
@@ -177,7 +151,7 @@ export default {
 .Header {
   height: 10vh;
   width: 100%;
-  background-color: #00B1FF;
+  background-color: black;
   display:flex;
 }
 

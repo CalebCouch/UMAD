@@ -7,16 +7,22 @@
       <div class="Teams-Body">
         <table id="customers">
   <tr>
-    <th>Name</th>
+    <th>In game name</th>
+    <th>Discord Tag</th>
     <th>Team</th>
     <th>Role</th>
     <th>Best Times</th>
+    <th>Annoying Times</th>
+    <th>Blackout Times</th>
   </tr>
   <tr>
-    <td>SoupLaddler</td>
+    <td>QuantumTiger</td>
+    <td>QuantumTiger#0407</td>
     <td>UMAD X</td>
-    <td>Captian</td>
-    <td>?</td>
+    <td>Scheduler</td>
+    <td>8:30-9:30PM EST Daily</td>
+    <td>6:00-7:30PM EST Daily</td>
+    <td>7:30-8:30PM EST Daily</td>
   </tr>
 
   

@@ -2,7 +2,7 @@
   <div class="Register" id="Register">
     <div class="Register-Content">
       <div class="Register-Left" id="Register-Left">
-        <p class="H1 B header" style="margin-top: 12.5%; margin-bottom: 2.5%;">Apply</p>
+        <p class="H1 B header" style="margin-top: 12.5%; margin-bottom: 2.5%;padding-top: 5%;">Apply</p>
         <!-- <p class="H6 L subtext" style="width: 80%;"></p> -->
         <div class="Form">
           <b-form @submit="onSubmit" @reset="onReset" v-if="show" class="Form-Content">
@@ -15,7 +15,7 @@
                 name="name"
                 required
               ></b-form-input>
-               <p class="H6 M form-header" style="width: 80%;">Type of playstyle</p>
+               <p class="H6 M form-header" style="width: 80%;">Describe your playstyle</p>
               <b-form-textarea
                 id="textarea-5"
                 v-model="form.playstyle"
@@ -23,7 +23,7 @@
                 name="ages"
                 required
               ></b-form-textarea>
-              <p class="H6 M form-header" style="width: 80%;">lease Select The Team You Are Applying To</p>
+              <p class="H6 M form-header" style="width: 80%;">Please Select The Team You Are Applying To</p>
               <select v-model="form.team" class="role">
                 <option disabled value="">Please Select The Team You Are Applying To</option>
                 <option>UMAD X</option>
@@ -34,7 +34,7 @@
               <b-button type="submit" class="Register-Button">Apply Now</b-button>
             </div>
             <div class="Form-Right">
-              <p class="H6 M form-header">Best Times To Play</p>
+              <p class="H6 M form-header">Best Times To Play (Expected to show up for at least one of these hours daily)</p>
               <b-form-textarea
                 id="textarea-1"
                 v-model="form.time"
@@ -43,7 +43,7 @@
                 required
               ></b-form-textarea>
 
-              <p class="H6 M form-header">Anoying Times To Play</p>
+              <p class="H6 M form-header">Anoying Times To Play (We will only use these for hard to schedule scrims)</p>
               <b-form-textarea
                 id="textarea-2"
                 v-model="form.time2"
@@ -52,7 +52,7 @@
                 required
               ></b-form-textarea>
 
-               <p class="H6 M form-header">Times Deffinently Unable to Play</p>
+               <p class="H6 M form-header">Times Deffinently Unable to Play (We won't even ask if you can play durring these times)</p>
               <b-form-textarea
                 id="textarea-3"
                 v-model="form.time3"
@@ -60,7 +60,7 @@
                 name="time3"
                 required
               ></b-form-textarea>
-              <p class="H6 M form-header" style="width: 80%;">Any other notes about times avalible or not</p>
+              <p class="H6 M form-header" style="width: 80%;">Any other notes about times avalible</p>
               <b-form-textarea
                 id="textarea-4"
                 v-model="form.time4"
@@ -99,8 +99,8 @@ export default {
     onSubmit(e) {
       e.preventDefault()
       try {
-        emailjs.sendForm('service_octa5y8', 'template_xt0910h', e.target,
-        'user_zU5VyI9YLll168gj1DPex', {
+        emailjs.sendForm('service_8qvkcdk', 'template_i93wfcv', e.target,
+        'user_RvnnQps43K7mAMAI1SDN3', {
           name: this.name,
           time: this.time,
           time2: this.time2,
@@ -215,6 +215,7 @@ export default {
 
   }
   .Form-Left {
+    margin-right: 10vw;
 
   }
   .role {
