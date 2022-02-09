@@ -20,11 +20,11 @@
                 id="textarea-5"
                 v-model="form.playstyle"
                 type="text"
-                name="ages"
+                name="playstyle"
                 required
               ></b-form-textarea>
               <p class="H6 M form-header" style="width: 80%;">Please Select The Team You Are Applying To</p>
-              <select v-model="form.team" class="role">
+              <select v-model="form.team" name="team" class="role">
                 <option disabled value="">Please Select The Team You Are Applying To</option>
                 <option>UMAD X</option>
                 <option>UMAD Y</option>
@@ -39,7 +39,7 @@
                 id="textarea-1"
                 v-model="form.time"
                 type="text"
-                name="time1"
+                name="time"
                 required
               ></b-form-textarea>
 
@@ -65,7 +65,7 @@
                 id="textarea-4"
                 v-model="form.time4"
                 type="text"
-                name="ages"
+                name="time4"
                 required
               ></b-form-textarea>
             </div>
