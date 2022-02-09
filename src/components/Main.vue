@@ -45,9 +45,9 @@ export default {
   },
   mounted () {
     var video = document.getElementById('video1')
-    setTimeout(()=>{video.play()},1000)
+    video.play()
     var FinishVideo = () => {
-      console.log(video.networkState)
+      console.log(video.currentTime)
       if (video.currentTime >= 4.627744) {
         video.pause()
         return
